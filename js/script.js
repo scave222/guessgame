@@ -20,6 +20,9 @@ function compareGuesses(humanGuess, computerGuess, targetGuess) {
     } else if (computerGuess < humanGuess) {
       return false;
     }
+    else if (humanGuess > 9){
+        alert("input should be less than 10 ") 
+    }
   }
   
   
