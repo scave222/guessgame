@@ -11,18 +11,16 @@ function generateTarget(){
 function compareGuesses(humanGuess, computerGuess, targetGuess) {
     computerGuess = generateTarget();
   
-    humanGuess = Math.abs(targetGuess - humanGuess);
-    computerGuess = Math.abs(targetGuess - computerGuess);
+   let humanPoint = Math.abs(targetGuess - humanGuess);
+   let computerPoint = Math.abs(targetGuess - computerGuess);
     
     
-    if (computerGuess > humanGuess && computerGuess >= computerGuess || computerGuess < humanGuess && computerGuess <= computerGuess ) {
+    if (humanPoint < computerPoint || humanPoint == computerPoint ) {
       return true;
-    } else if (computerGuess < humanGuess) {
-      return false;
+    } else if (humanGuess > 9 || humanGuess <  0){
+        alert("input should be less than 10 and greater than ") 
     }
-    else if (humanGuess > 9){
-        alert("input should be less than 10 ") 
-    }
+    else return false
   }
   
   
