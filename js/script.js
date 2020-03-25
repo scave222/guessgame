@@ -18,7 +18,7 @@ function compareGuesses(humanGuess, computerGuess, targetGuess) {
     if (humanPoint < computerPoint || humanPoint == computerPoint ) {
       return true;
     } else if (humanGuess > 9 || humanGuess <  0){
-        alert("input should be less than 10 and greater than ") 
+        alert("input should be less than 10 and greater than 0") 
     }
     else return false
   }
